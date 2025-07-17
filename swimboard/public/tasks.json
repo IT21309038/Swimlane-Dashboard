@@ -178,5 +178,90 @@
                 "url": "https://example.com/files/legacy_code_map.pdf"
             }
         ]
+    },
+    {
+        "id": 11,
+        "title": "Prepare release notes",
+        "description": "Draft and review release notes for the upcoming software version.",
+        "status": "To Do",
+        "priority": "medium",
+        "dueDate": "2025-11-27",
+        "assignedTo": "Karen White",
+        "tags": ["documentation", "release"],
+        "supportingFiles": [
+            {
+                "fileName": "release_notes_template.md",
+                "fileType": "text/markdown",
+                "url": "https://example.com/files/release_notes_template.md"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Migrate to new server infrastructure",
+        "description": "Move application and database to the new cloud server environment.",
+        "status": "To Do",
+        "priority": "high",
+        "dueDate": "2025-12-02",
+        "assignedTo": "Leo Park",
+        "tags": ["infrastructure", "migration"],
+        "supportingFiles": [
+            {
+                "fileName": "migration_plan.pdf",
+                "fileType": "application/pdf",
+                "url": "https://example.com/files/migration_plan.pdf"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Add multi-language support",
+        "description": "Implement localization for English, Spanish, and French.",
+        "status": "In Progress",
+        "priority": "medium",
+        "dueDate": "2025-12-05",
+        "assignedTo": "Maria Gomez",
+        "tags": ["frontend", "localization"],
+        "supportingFiles": [
+            {
+                "fileName": "localization_strings.xlsx",
+                "fileType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "url": "https://example.com/files/localization_strings.xlsx"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Perform security audit",
+        "description": "Conduct a comprehensive security audit of the application.",
+        "status": "To Do",
+        "priority": "high",
+        "dueDate": "2025-12-10",
+        "assignedTo": "Nina Patel",
+        "tags": ["security", "audit"],
+        "supportingFiles": [
+            {
+                "fileName": "security_audit_checklist.docx",
+                "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "url": "https://example.com/files/security_audit_checklist.docx"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Organize team retrospective",
+        "description": "Schedule and facilitate a sprint retrospective meeting.",
+        "status": "To Do",
+        "priority": "low",
+        "dueDate": "2025-12-03",
+        "assignedTo": "Oscar Rivera",
+        "tags": ["agile", "meeting"],
+        "supportingFiles": [
+            {
+                "fileName": "retrospective_agenda.pdf",
+                "fileType": "application/pdf",
+                "url": "https://example.com/files/retrospective_agenda.pdf"
+            }
+        ]
     }
 ]

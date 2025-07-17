@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Swimlane from './Swimlane'
+import SearchBar from './SearchBar';
 
 import { useEffect } from 'react';
 import { useTaskStore } from '@/store/useTaskStore';
@@ -26,10 +27,10 @@ const Board = () => {
   return (
     <div className='flex flex-col gap-4'>
       <div className='text-2xl font-semibold'>Task Board</div>
-
+      <SearchBar />
       <div className='flex gap-4 overflow-x-auto'>
         {statuses.map((status) => (
-          <Swimlane key={status} status={status} />
+          <Swimlane key={status} status={status}/>
         ))}
       </div>
     </div>

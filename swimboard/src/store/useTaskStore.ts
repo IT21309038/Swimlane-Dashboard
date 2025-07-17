@@ -22,9 +22,15 @@ export type Task = {
 type TaskStore = {
     tasks: Task[];
     setTasks: (tasks: Task[]) => void;
+
+    searchQuery: string;
+    setSearchQuery: (query: string) => void;
 };
 
 export const useTaskStore = create<TaskStore>((set) => ({
     tasks: [],
     setTasks: (tasks) => set({tasks}),
+
+    searchQuery: '',
+    setSearchQuery: (query) => set({searchQuery: query})
 }))
