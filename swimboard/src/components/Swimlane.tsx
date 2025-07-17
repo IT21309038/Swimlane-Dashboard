@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useTaskStore } from "@/store/useTaskStore";
+import { useDroppable } from "@dnd-kit/core";
 import TaskCard from "./TaskCard";
 
 interface SwimlaneProps {
@@ -8,6 +9,7 @@ interface SwimlaneProps {
 }
 
 const Swimlane = ({ status }: SwimlaneProps) => {
+
   const { tasks, searchQuery } = useTaskStore();
   const filterdTasks = tasks
     .filter((task) => task.status === status)
@@ -17,8 +19,12 @@ const Swimlane = ({ status }: SwimlaneProps) => {
         tasks.description.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    const { setNodeRef } = useDroppable({
+      id: status,
+    });
+
   return (
-    <div className="min-w-[300px] bg-gray-100 rounded-md p-4 shadow">
+    <div ref={setNodeRef} className="min-w-[300px] bg-gray-100 rounded-md p-4 shadow">
       <h2 className="text-lg font-bold mb-2">{status}</h2>
       <div
         className="flex flex-col gap-2 overflow-y-auto max-h-[480px] scrollbar-hide"
