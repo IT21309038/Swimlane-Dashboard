@@ -14,6 +14,8 @@ export type Task = {
   priority?: string;
   dueDate?: string;
   assignedTo?: string;
+  images?: string[];
+  comments?: string[];
   tags?: string[];
   supportingFiles?: SupportingFile[];
 };

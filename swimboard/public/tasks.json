@@ -1,267 +1,383 @@
 [
-    {
-        "id": 1,
-        "title": "Complete the project documentation",
-        "description": "Ensure all sections of the project documentation are filled out and reviewed.",
-        "status": "In Progress",
-        "priority": "high",
-        "dueDate": "2025-11-15",
-        "assignedTo": "Alice Johnson",
-        "tags": ["documentation", "review"],
-        "supportingFiles": [
-            {
-                "fileName": "project_overview.pdf",
-                "fileType": "application/pdf",
-                "url": "https://example.com/files/project_overview.pdf"
-            },
-            {
-                "fileName": "requirements.docx",
-                "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                "url": "https://example.com/files/requirements.docx"
-            },
-            {
-                "fileName": "design_specifications.pptx",
-                "fileType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-                "url": "https://example.com/files/design_specifications.pptx"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Implement user authentication",
-        "description": "Develop and integrate user login, registration, and password reset features.",
-        "status": "To Do",
-        "priority": "high",
-        "dueDate": "2025-11-20",
-        "assignedTo": "Bob Smith",
-        "tags": ["backend", "security"],
-        "supportingFiles": [
-            {
-                "fileName": "auth_flow_diagram.png",
-                "fileType": "image/png",
-                "url": "https://example.com/files/auth_flow_diagram.png"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Design dashboard UI",
-        "description": "Create wireframes and mockups for the main dashboard interface.",
-        "status": "In Progress",
-        "priority": "medium",
-        "dueDate": "2025-11-18",
-        "assignedTo": "Carol Lee",
-        "tags": ["frontend", "design"],
-        "supportingFiles": [
-            {
-                "fileName": "dashboard_wireframe.sketch",
-                "fileType": "application/octet-stream",
-                "url": "https://example.com/files/dashboard_wireframe.sketch"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Set up CI/CD pipeline",
-        "description": "Configure automated build, test, and deployment workflows.",
-        "status": "To Do",
-        "priority": "high",
-        "dueDate": "2025-11-22",
-        "assignedTo": "David Kim",
-        "tags": ["devops", "automation"],
-        "supportingFiles": [
-            {
-                "fileName": "ci_cd_config.yml",
-                "fileType": "text/yaml",
-                "url": "https://example.com/files/ci_cd_config.yml"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Write unit tests for API endpoints",
-        "description": "Ensure all API endpoints are covered by unit tests.",
-        "status": "In Progress",
-        "priority": "medium",
-        "dueDate": "2025-11-19",
-        "assignedTo": "Eve Martinez",
-        "tags": ["backend", "testing"],
-        "supportingFiles": [
-            {
-                "fileName": "api_test_plan.md",
-                "fileType": "text/markdown",
-                "url": "https://example.com/files/api_test_plan.md"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Optimize database queries",
-        "description": "Review and optimize slow database queries for better performance.",
-        "status": "To Do",
-        "priority": "low",
-        "dueDate": "2025-11-25",
-        "assignedTo": "Frank Zhao",
-        "tags": ["backend", "database", "performance"],
-        "supportingFiles": [
-            {
-                "fileName": "slow_queries_report.csv",
-                "fileType": "text/csv",
-                "url": "https://example.com/files/slow_queries_report.csv"
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "title": "Conduct user acceptance testing",
-        "description": "Coordinate UAT sessions and collect feedback from stakeholders.",
-        "status": "To Do",
-        "priority": "medium",
-        "dueDate": "2025-11-28",
-        "assignedTo": "Grace Lin",
-        "tags": ["testing", "uat"],
-        "supportingFiles": [
-            {
-                "fileName": "uat_checklist.xlsx",
-                "fileType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                "url": "https://example.com/files/uat_checklist.xlsx"
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "title": "Update project roadmap",
-        "description": "Revise the project roadmap based on recent changes and feedback.",
-        "status": "Approved",
-        "priority": "low",
-        "dueDate": "2025-11-10",
-        "assignedTo": "Henry Ford",
-        "tags": ["planning", "management"],
-        "supportingFiles": [
-            {
-                "fileName": "roadmap_2025.pdf",
-                "fileType": "application/pdf",
-                "url": "https://example.com/files/roadmap_2025.pdf"
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Integrate third-party analytics",
-        "description": "Add and configure analytics tracking for user interactions.",
-        "status": "In Progress",
-        "priority": "medium",
-        "dueDate": "2025-11-23",
-        "assignedTo": "Ivy Chen",
-        "tags": ["frontend", "analytics"],
-        "supportingFiles": [
-            {
-                "fileName": "analytics_setup_guide.docx",
-                "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                "url": "https://example.com/files/analytics_setup_guide.docx"
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "title": "Refactor legacy code",
-        "description": "Improve code readability and maintainability in legacy modules.",
-        "status": "To Do",
-        "priority": "low",
-        "dueDate": "2025-11-30",
-        "assignedTo": "Jackie Nguyen",
-        "tags": ["refactor", "maintenance"],
-        "supportingFiles": [
-            {
-                "fileName": "legacy_code_map.pdf",
-                "fileType": "application/pdf",
-                "url": "https://example.com/files/legacy_code_map.pdf"
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "title": "Prepare release notes",
-        "description": "Draft and review release notes for the upcoming software version.",
-        "status": "To Do",
-        "priority": "medium",
-        "dueDate": "2025-11-27",
-        "assignedTo": "Karen White",
-        "tags": ["documentation", "release"],
-        "supportingFiles": [
-            {
-                "fileName": "release_notes_template.md",
-                "fileType": "text/markdown",
-                "url": "https://example.com/files/release_notes_template.md"
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "title": "Migrate to new server infrastructure",
-        "description": "Move application and database to the new cloud server environment.",
-        "status": "To Do",
-        "priority": "high",
-        "dueDate": "2025-12-02",
-        "assignedTo": "Leo Park",
-        "tags": ["infrastructure", "migration"],
-        "supportingFiles": [
-            {
-                "fileName": "migration_plan.pdf",
-                "fileType": "application/pdf",
-                "url": "https://example.com/files/migration_plan.pdf"
-            }
-        ]
-    },
-    {
-        "id": 13,
-        "title": "Add multi-language support",
-        "description": "Implement localization for English, Spanish, and French.",
-        "status": "In Progress",
-        "priority": "medium",
-        "dueDate": "2025-12-05",
-        "assignedTo": "Maria Gomez",
-        "tags": ["frontend", "localization"],
-        "supportingFiles": [
-            {
-                "fileName": "localization_strings.xlsx",
-                "fileType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                "url": "https://example.com/files/localization_strings.xlsx"
-            }
-        ]
-    },
-    {
-        "id": 14,
-        "title": "Perform security audit",
-        "description": "Conduct a comprehensive security audit of the application.",
-        "status": "To Do",
-        "priority": "high",
-        "dueDate": "2025-12-10",
-        "assignedTo": "Nina Patel",
-        "tags": ["security", "audit"],
-        "supportingFiles": [
-            {
-                "fileName": "security_audit_checklist.docx",
-                "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                "url": "https://example.com/files/security_audit_checklist.docx"
-            }
-        ]
-    },
-    {
-        "id": 15,
-        "title": "Organize team retrospective",
-        "description": "Schedule and facilitate a sprint retrospective meeting.",
-        "status": "To Do",
-        "priority": "low",
-        "dueDate": "2025-12-03",
-        "assignedTo": "Oscar Rivera",
-        "tags": ["agile", "meeting"],
-        "supportingFiles": [
-            {
-                "fileName": "retrospective_agenda.pdf",
-                "fileType": "application/pdf",
-                "url": "https://example.com/files/retrospective_agenda.pdf"
-            }
-        ]
-    }
+  {
+    "id": 1,
+    "title": "Complete the project documentation",
+    "description": "Ensure all sections of the project documentation are filled out and reviewed.",
+    "status": "In Progress",
+    "priority": "high",
+    "dueDate": "2025-11-15",
+    "assignedTo": "Alice Johnson",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "This task is crucial for project clarity and future reference.",
+      "Please ensure all team members review the documentation before finalizing."
+    ],
+    "tags": ["documentation", "review"],
+    "supportingFiles": [
+      {
+        "fileName": "project_overview.pdf",
+        "fileType": "application/pdf",
+        "url": "https://example.com/files/project_overview.pdf"
+      },
+      {
+        "fileName": "requirements.docx",
+        "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://example.com/files/requirements.docx"
+      },
+      {
+        "fileName": "design_specifications.pptx",
+        "fileType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "url": "https://example.com/files/design_specifications.pptx"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Implement user authentication",
+    "description": "Develop and integrate user login, registration, and password reset features.",
+    "status": "To Do",
+    "priority": "high",
+    "dueDate": "2025-11-20",
+    "assignedTo": "Bob Smith",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "Authentication is a critical security feature.",
+      "Coordinate with the frontend team for UI integration."
+    ],
+    "tags": ["backend", "security"],
+    "supportingFiles": [
+      {
+        "fileName": "auth_flow_diagram.png",
+        "fileType": "image/png",
+        "url": "https://example.com/files/auth_flow_diagram.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Design dashboard UI",
+    "description": "Create wireframes and mockups for the main dashboard interface.",
+    "status": "In Progress",
+    "priority": "medium",
+    "dueDate": "2025-11-18",
+    "assignedTo": "Carol Lee",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png"
+    ],
+    "comments": [
+      "Focus on usability and accessibility.",
+      "Share mockups with stakeholders for feedback."
+    ],
+    "tags": ["frontend", "design"],
+    "supportingFiles": [
+      {
+        "fileName": "dashboard_wireframe.sketch",
+        "fileType": "application/octet-stream",
+        "url": "https://example.com/files/dashboard_wireframe.sketch"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Set up CI/CD pipeline",
+    "description": "Configure automated build, test, and deployment workflows.",
+    "status": "To Do",
+    "priority": "high",
+    "dueDate": "2025-11-22",
+    "assignedTo": "David Kim",
+    "images": ["https://example.com/images/doc1.png"],
+    "comments": [
+      "Ensure all tests pass before deployment.",
+      "Document the pipeline setup for future reference."
+    ],
+    "tags": ["devops", "automation"],
+    "supportingFiles": [
+      {
+        "fileName": "ci_cd_config.yml",
+        "fileType": "text/yaml",
+        "url": "https://example.com/files/ci_cd_config.yml"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Write unit tests for API endpoints",
+    "description": "Ensure all API endpoints are covered by unit tests.",
+    "status": "In Progress",
+    "priority": "medium",
+    "dueDate": "2025-11-19",
+    "assignedTo": "Eve Martinez",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "Aim for at least 90% code coverage.",
+      "Review test cases with the QA team."
+    ],
+    "tags": ["backend", "testing"],
+    "supportingFiles": [
+      {
+        "fileName": "api_test_plan.md",
+        "fileType": "text/markdown",
+        "url": "https://example.com/files/api_test_plan.md"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Optimize database queries",
+    "description": "Review and optimize slow database queries for better performance.",
+    "status": "To Do",
+    "priority": "low",
+    "dueDate": "2025-11-25",
+    "assignedTo": "Frank Zhao",
+    "images": ["https://example.com/images/doc1.png"],
+    "comments": [
+      "Identify queries with the highest latency.",
+      "Consider adding indexes where appropriate."
+    ],
+    "tags": ["backend", "database", "performance"],
+    "supportingFiles": [
+      {
+        "fileName": "slow_queries_report.csv",
+        "fileType": "text/csv",
+        "url": "https://example.com/files/slow_queries_report.csv"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Conduct user acceptance testing",
+    "description": "Coordinate UAT sessions and collect feedback from stakeholders.",
+    "status": "To Do",
+    "priority": "medium",
+    "dueDate": "2025-11-28",
+    "assignedTo": "Grace Lin",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png"
+    ],
+    "comments": [
+      "Schedule sessions with key users.",
+      "Document all feedback for review."
+    ],
+    "tags": ["testing", "uat"],
+    "supportingFiles": [
+      {
+        "fileName": "uat_checklist.xlsx",
+        "fileType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "url": "https://example.com/files/uat_checklist.xlsx"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Update project roadmap",
+    "description": "Revise the project roadmap based on recent changes and feedback.",
+    "status": "Approved",
+    "priority": "low",
+    "dueDate": "2025-11-10",
+    "assignedTo": "Henry Ford",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png"
+    ],
+    "comments": [
+      "Highlight major milestones and deadlines.",
+      "Share updated roadmap with all stakeholders."
+    ],
+    "tags": ["planning", "management"],
+    "supportingFiles": [
+      {
+        "fileName": "roadmap_2025.pdf",
+        "fileType": "application/pdf",
+        "url": "https://example.com/files/roadmap_2025.pdf"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Integrate third-party analytics",
+    "description": "Add and configure analytics tracking for user interactions.",
+    "status": "In Progress",
+    "priority": "medium",
+    "dueDate": "2025-11-23",
+    "assignedTo": "Ivy Chen",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "Ensure compliance with privacy regulations.",
+      "Test analytics events thoroughly."
+    ],
+    "tags": ["frontend", "analytics"],
+    "supportingFiles": [
+      {
+        "fileName": "analytics_setup_guide.docx",
+        "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://example.com/files/analytics_setup_guide.docx"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Refactor legacy code",
+    "description": "Improve code readability and maintainability in legacy modules.",
+    "status": "To Do",
+    "priority": "low",
+    "dueDate": "2025-11-30",
+    "assignedTo": "Jackie Nguyen",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "Refactor in small, manageable steps.",
+      "Write tests for refactored code."
+    ],
+    "tags": ["refactor", "maintenance"],
+    "supportingFiles": [
+      {
+        "fileName": "legacy_code_map.pdf",
+        "fileType": "application/pdf",
+        "url": "https://example.com/files/legacy_code_map.pdf"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Prepare release notes",
+    "description": "Draft and review release notes for the upcoming software version.",
+    "status": "To Do",
+    "priority": "medium",
+    "dueDate": "2025-11-27",
+    "assignedTo": "Karen White",
+    "images": ["https://example.com/images/doc1.png"],
+    "comments": [
+      "Include all major features and bug fixes.",
+      "Have the release notes reviewed by the QA team."
+    ],
+    "tags": ["documentation", "release"],
+    "supportingFiles": [
+      {
+        "fileName": "release_notes_template.md",
+        "fileType": "text/markdown",
+        "url": "https://example.com/files/release_notes_template.md"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Migrate to new server infrastructure",
+    "description": "Move application and database to the new cloud server environment.",
+    "status": "To Do",
+    "priority": "high",
+    "dueDate": "2025-12-02",
+    "assignedTo": "Leo Park",
+    "images": ["https://example.com/images/doc1.png"],
+    "comments": [
+      "Plan for minimal downtime during migration.",
+      "Test all services after migration is complete."
+    ],
+    "tags": ["infrastructure", "migration"],
+    "supportingFiles": [
+      {
+        "fileName": "migration_plan.pdf",
+        "fileType": "application/pdf",
+        "url": "https://example.com/files/migration_plan.pdf"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Add multi-language support",
+    "description": "Implement localization for English, Spanish, and French.",
+    "status": "In Progress",
+    "priority": "medium",
+    "dueDate": "2025-12-05",
+    "assignedTo": "Maria Gomez",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "Ensure translations are accurate.",
+      "Test UI for all supported languages."
+    ],
+    "tags": ["frontend", "localization"],
+    "supportingFiles": [
+      {
+        "fileName": "localization_strings.xlsx",
+        "fileType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "url": "https://example.com/files/localization_strings.xlsx"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Perform security audit",
+    "description": "Conduct a comprehensive security audit of the application.",
+    "status": "To Do",
+    "priority": "high",
+    "dueDate": "2025-12-10",
+    "assignedTo": "Nina Patel",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "Check for vulnerabilities in all modules.",
+      "Document all findings and recommendations."
+    ],
+    "tags": ["security", "audit"],
+    "supportingFiles": [
+      {
+        "fileName": "security_audit_checklist.docx",
+        "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://example.com/files/security_audit_checklist.docx"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Organize team retrospective",
+    "description": "Schedule and facilitate a sprint retrospective meeting.",
+    "status": "To Do",
+    "priority": "low",
+    "dueDate": "2025-12-03",
+    "assignedTo": "Oscar Rivera",
+    "images": [
+      "https://example.com/images/doc1.png",
+      "https://example.com/images/doc2.png",
+      "https://example.com/images/doc3.png"
+    ],
+    "comments": [
+      "Encourage open and constructive feedback.",
+      "Summarize action items at the end of the meeting."
+    ],
+    "tags": ["agile", "meeting"],
+    "supportingFiles": [
+      {
+        "fileName": "retrospective_agenda.pdf",
+        "fileType": "application/pdf",
+        "url": "https://example.com/files/retrospective_agenda.pdf"
+      }
+    ]
+  }
 ]
