@@ -1,8 +1,13 @@
 import React from 'react'
 
-const TaskCard = () => {
+import { Task } from '@/store/useTaskStore'
+
+const TaskCard = ({task}: {task : Task}) => {
   return (
-    <div>TaskCard</div>
+    <div className='p-4 bg-white rounded shadow hover:shadow-md transition'>
+      <div className='font-semibold'>{task.title}</div>
+      <p className='text-sm text-gray-600'>{task.description}</p>
+    </div>
   )
 }
 
