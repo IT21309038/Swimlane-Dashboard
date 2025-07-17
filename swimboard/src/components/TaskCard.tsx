@@ -1,18 +1,23 @@
 import React from "react";
 
 import { Task } from "@/store/useTaskStore";
-import { useDraggable } from "@dnd-kit/core";
+import { useSortable } from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 
 const TaskCard = ({ task }: { task: Task }) => {
-  const { attributes, listeners, setNodeRef, transform } = useDraggable({
-    id: task.id.toString(),
-  });
+  const { attributes, listeners, setNodeRef, transform, isDragging } =
+    useSortable({
+      id: task.id.toString(),
+    });
 
-  const style = transform
-    ? {
-        transform: `translate(${transform.x}px, ${transform.y}px)`,
-      }
-    : undefined;
+  const style: React.CSSProperties = {
+    transform: CSS.Transform.toString(transform),
+    transition: "none",
+    zIndex: isDragging ? 999 : "auto",
+    opacity: isDragging ? 0.8 : 1,
+  };
+
+  if (isDragging) return null;
 
   return (
     <div
