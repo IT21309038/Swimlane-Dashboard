@@ -56,5 +56,16 @@ A pixel-perfect, responsive Swimlane Dashboard implemented using **Next.js** and
 └── utils/ # Helper functions
 
 ```bash
-git clone https://github.com/IT21309038/Swimlane-Dashboard
-cd swimlane-dashboard
+git clone [https://github.com/IT21309038/Swimlane-Dashboard](https://github.com/IT21309038/Swimlane-Dashboard.git)
+cd swimboard
+
+npm install
+# or
+yarn install
+
+npm run dev
+# or
+yarn dev
+```
+
+Navigate to http://localhost:3000 in your browser.
