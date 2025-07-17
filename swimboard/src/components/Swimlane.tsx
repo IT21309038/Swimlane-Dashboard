@@ -7,6 +7,7 @@ import {
   SortableContext,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
+import SwimLaneHeader from "./SwimLaneHeader";
 
 interface SwimlaneProps {
   status: string;
@@ -19,7 +20,8 @@ const Swimlane = ({ status }: SwimlaneProps) => {
     .filter(
       (tasks) =>
         tasks.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        tasks.description.toLowerCase().includes(searchQuery.toLowerCase())
+        (tasks.assignedTo && tasks.assignedTo.toLowerCase().includes(searchQuery.toLowerCase()))||
+        (tasks.priority && tasks.priority.toLowerCase().includes(searchQuery.toLowerCase()))
     );
 
   const { setNodeRef } = useDroppable({
@@ -31,9 +33,10 @@ const Swimlane = ({ status }: SwimlaneProps) => {
       ref={setNodeRef}
       className="min-w-[300px] bg-gray-100 rounded-md p-4 shadow"
     >
-      <h2 className="text-lg font-bold mb-2">{status}</h2>
+      {/* <h2 className="text-lg font-bold mb-2">{status}</h2> */}
+      <SwimLaneHeader status={status} />
       <div
-        className="flex flex-col gap-2 overflow-y-auto max-h-[480px] scrollbar-hide"
+        className="flex flex-col gap-2 overflow-y-auto max-h-[430px] scrollbar-hide"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",

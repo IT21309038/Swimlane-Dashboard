@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Swimlane from "./Swimlane";
-import SearchBar from "./SearchBar";
 
 import { useEffect } from "react";
 import { useTaskStore } from "@/store/useTaskStore";
@@ -111,8 +110,6 @@ const Board = () => {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="text-2xl font-semibold">Task Board</div>
-      <SearchBar />
       <DndContext
         onDragStart={(event) => setActiveId(event.active.id.toString())}
         onDragEnd={handleDragEnd}
